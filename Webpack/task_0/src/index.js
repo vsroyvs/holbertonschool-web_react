@@ -1,5 +1,8 @@
 import $ from 'jquery';
 
-console.log('Holberton Dashboard\n');
-console.log('Dashboard data for the students\n');
-console.log('Copyright - Holberton School');
+$(document).ready(function () {
+  
+    $('body').append('<p>Holberton Dashboard</p>');
+    $('body').append('<p>Dashboard data for the students</p>');
+    $('body').append('<p>Copyright - Holberton School</p>');
+  });
