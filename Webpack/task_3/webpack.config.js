@@ -15,6 +15,11 @@ module.exports = {
         path: path.resolve(__dirname, "public"),
         filename: '[name].bundle.js',
     },
+    optimization: {
+        splitChunks: {
+          chunks: 'all',
+        },
+    },
     devServer: {
         static: path.join(__dirname, './public'),
         port: 8564,
